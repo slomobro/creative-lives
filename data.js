@@ -574,3 +574,83 @@ const CATEGORIES = [
     ],
   },
 ];
+
+// Quiz — each answer adds points to category ids. Top scorers become the recommendations.
+const QUIZ = [
+  {
+    question: "What pulls you most?",
+    options: [
+      {
+        label: "Working with my hands, close to nature",
+        scores: { "work-exchange": 3, conservation: 2, "intentional-communities": 1 },
+      },
+      {
+        label: "Adventure and the outdoors",
+        scores: { seasonal: 3, sailing: 2, "slow-travel": 2 },
+      },
+      {
+        label: "Peace, meaning, reflection",
+        scores: { contemplative: 3, "intentional-communities": 2 },
+      },
+      {
+        label: "People — families, kids, community",
+        scores: { "au-pair": 3, hospitality: 2, festivals: 1 },
+      },
+      {
+        label: "I want to earn money while I'm abroad",
+        scores: { "teach-english": 3, seasonal: 2, caretaking: 1 },
+      },
+    ],
+  },
+  {
+    question: "How long do you want to be away?",
+    options: [
+      {
+        label: "A few days to a couple of weeks",
+        scores: { hospitality: 3, "slow-travel": 2, festivals: 2, "house-sitting": 1 },
+      },
+      {
+        label: "A month or two",
+        scores: { "work-exchange": 3, "house-sitting": 2, conservation: 2, seasonal: 1 },
+      },
+      {
+        label: "Half a year or more",
+        scores: { "au-pair": 3, "teach-english": 2, contemplative: 2, caretaking: 1, "intentional-communities": 1 },
+      },
+    ],
+  },
+  {
+    question: "What's your budget like?",
+    options: [
+      {
+        label: "Basically zero — I need it free",
+        scores: { hospitality: 3, "work-exchange": 2, sailing: 2, "slow-travel": 1, festivals: 1, caretaking: 1 },
+      },
+      {
+        label: "A little to invest up front",
+        scores: { "house-sitting": 3, conservation: 2, "intentional-communities": 1, contemplative: 1 },
+      },
+      {
+        label: "I actually want to come home with savings",
+        scores: { "teach-english": 3, seasonal: 2, "au-pair": 2, caretaking: 1 },
+      },
+    ],
+  },
+  {
+    question: "Your ideal setting?",
+    options: [
+      {
+        label: "Remote nature — farm, wilderness, the sea",
+        scores: { "work-exchange": 2, conservation: 2, caretaking: 2, sailing: 2 },
+      },
+      {
+        label: "A city or town to settle into",
+        scores: { hospitality: 2, "house-sitting": 2, "teach-english": 2, "au-pair": 2 },
+      },
+      {
+        label: "Among a community of people",
+        scores: { "intentional-communities": 3, contemplative: 2, festivals: 1 },
+      },
+    ],
+  },
+];

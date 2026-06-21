@@ -1,4 +1,4 @@
-# Creative Lives
+# Deep Travel
 
 A small, free web resource illuminating the many ways to **travel and live cheaply** — the options that exist outside the traditional corporate world.
 
