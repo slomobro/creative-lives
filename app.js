@@ -22,11 +22,36 @@ function renderChips() {
   });
 }
 
+// Pull a platform's logo from its own domain's favicon — no image files to manage.
+function logoFor(url) {
+  try {
+    const host = new URL(url).hostname;
+    return `https://www.google.com/s2/favicons?domain=${host}&sz=64`;
+  } catch (e) {
+    return null;
+  }
+}
+
 function renderCard(p) {
   const card = el("article", "card");
 
   const top = el("div", "card-top");
-  top.appendChild(el("h3", null, p.name));
+
+  const heading = el("div", "card-heading");
+  const logoSrc = p.url ? logoFor(p.url) : null;
+  if (logoSrc) {
+    const logo = document.createElement("img");
+    logo.className = "logo";
+    logo.src = logoSrc;
+    logo.alt = "";
+    logo.loading = "lazy";
+    // If a favicon fails to load, hide it gracefully rather than show a broken icon.
+    logo.addEventListener("error", () => logo.remove());
+    heading.appendChild(logo);
+  }
+  heading.appendChild(el("h3", null, p.name));
+  top.appendChild(heading);
+
   if (p.cost) top.appendChild(el("span", "cost", p.cost));
   card.appendChild(top);
 
