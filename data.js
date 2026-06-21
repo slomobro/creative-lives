@@ -129,15 +129,6 @@ const CATEGORIES = [
         details:
           "Predates the internet entirely. Founded to build international understanding after WWII, it involves a short interview to join, which keeps the community thoughtful and intentional. Stays are typically a couple of nights with real cultural exchange at the heart of it.",
       },
-      {
-        name: "Friends, friends-of-friends & acquaintances",
-        url: "",
-        cost: "Free (just ask)",
-        summary:
-          "The most underrated option: tell people where you're going. You know more couches than you think.",
-        details:
-          "Post your route on social media, message that old coworker who moved to Lisbon, ask your aunt if she knows anyone in town. A surprising number of people are delighted to host a traveler they have any connection to — and offering to cook a meal, bring a gift, or return the favor turns a favor into a friendship. Two degrees of separation covers most of the map.",
-      },
     ],
   },
   {
@@ -229,6 +220,356 @@ const CATEGORIES = [
           "One of several solid agencies — always compare a few and read au pair reviews first.",
         details:
           "Beyond the big names there are many reputable regional agencies for Australia, the UK, and Europe. The key advice for any of them: talk to former au pairs, get the working hours and stipend in writing, and make sure the family's expectations match yours before you fly. The right match makes the year; the wrong one makes it long.",
+      },
+    ],
+  },
+  {
+    id: "sailing",
+    emoji: "⛵",
+    title: "Sailing & Boat Crew",
+    tagline: "Cross oceans for free as crew — no experience required to start.",
+    blurb:
+      "Boat owners constantly need extra hands to help sail their yachts across seas and between marinas. Plenty want willing, reliable crew more than seasoned sailors — they'll teach you the ropes. In exchange for standing watch, cooking, and helping out, you get your bunk, your food, and a passage you could never afford to buy. It's the closest thing to magic on this whole list: waking up mid-Atlantic, no land in sight, having paid nothing.",
+    platforms: [
+      {
+        name: "Crewbay",
+        url: "https://www.crewbay.com",
+        cost: "Free + paid tiers",
+        summary:
+          "A big, friendly marketplace connecting boat owners with crew of every experience level.",
+        details:
+          "Browse boats looking for crew right now, filter by region and whether it's a paid, expenses-shared, or free-passage trip. Lots of 'no experience needed, willing to teach' listings, which makes it the natural first stop for landlubbers dreaming of an ocean crossing.",
+      },
+      {
+        name: "Find a Crew",
+        url: "https://www.findacrew.net",
+        cost: "Free + paid tiers",
+        summary:
+          "The largest global crewing network — huge database of boats and opportunities worldwide.",
+        details:
+          "Enormous reach, from weekend coastal hops to round-the-world expeditions and delivery passages. The free tier lets you create a profile and get found; paid tiers unlock direct messaging. Set your profile to 'willing to learn' and be honest about what you can offer (cooking, fitness, good attitude all count).",
+      },
+      {
+        name: "CrewSeekers",
+        url: "https://www.crewseekers.net",
+        cost: "~£70/yr",
+        summary:
+          "Long-established and well-respected, with a more serious, blue-water sailing crowd.",
+        details:
+          "Running since 1990, this is where you find genuine ocean passages and yacht deliveries. The community skews a little more experienced, but there are mile-building berths perfect for someone wanting to learn fast. Quality over quantity.",
+      },
+      {
+        name: "Ocean Crew Link",
+        url: "https://www.oceancrewlink.com",
+        cost: "~$32/yr",
+        summary:
+          "Focused specifically on offshore and ocean passages — for the real adventure.",
+        details:
+          "Built for blue-water sailing rather than day trips. If your dream is specifically an ocean crossing — Atlantic milk run, Pacific puddle jump — this is the targeted place to find a skipper who needs crew for exactly that. Affordable annual membership.",
+      },
+    ],
+  },
+  {
+    id: "seasonal",
+    emoji: "🏔️",
+    title: "Seasonal & Adventure Jobs",
+    tagline: "Get paid to spend a season somewhere beautiful.",
+    blurb:
+      "A step up from pure work exchange: real jobs that come with housing (or cheap staff digs) in places people pay good money to visit. Ski resorts, national parks, summer camps, dive shops, farms at harvest time. You earn a wage, your living costs are tiny, and you're embedded in an extraordinary place with a built-in crew of fellow seasonal workers. Working-holiday visas make a lot of this possible for under-30s.",
+    platforms: [
+      {
+        name: "CoolWorks",
+        url: "https://www.coolworks.com",
+        cost: "Free",
+        summary:
+          "The legendary US board for 'jobs in great places' — national parks, ranches, ski resorts.",
+        details:
+          "Yellowstone lodges, Alaskan fishing, dude ranches, ski mountains, summer camps — almost all with housing included. The tagline says it all: jobs in great places. A rite of passage for Americans (and visa-holders) who want a season in the wild instead of a cubicle.",
+      },
+      {
+        name: "Seasonworkers",
+        url: "https://www.seasonworkers.com",
+        cost: "Free",
+        summary:
+          "UK and Europe's go-to for ski-season, summer-camp, and outdoor activity jobs.",
+        details:
+          "Strong on the Alps ski season (chalet host, resort rep, instructor) and summer outdoor work. Many roles include accommodation, ski pass, and meals. The classic way for Brits and Europeans to spend a winter in the mountains and break even or better.",
+      },
+      {
+        name: "Backpacker Job Board",
+        url: "https://www.backpackerjobboard.com.au",
+        cost: "Free",
+        summary:
+          "The hub for working-holiday jobs in Australia and New Zealand — farm work, hospitality, more.",
+        details:
+          "If you're on (or eyeing) an Australian or Kiwi working-holiday visa, this is the noticeboard. Fruit picking, hostel work, station hands, hospitality — including the regional farm work that can extend your visa a second or third year. Pairs perfectly with HelpX for the off weeks.",
+      },
+      {
+        name: "BUNAC",
+        url: "https://www.bunac.org",
+        cost: "Program fees",
+        summary:
+          "Long-running work-abroad organization that sorts the visa and logistics for you.",
+        details:
+          "BUNAC packages up working-holiday and summer-work programs (Camp USA, work in Canada/Australia/NZ) with visa support, insurance, and arrival help. More expensive than DIY, but it removes the scariest barrier — the paperwork — for a first big trip abroad.",
+      },
+    ],
+  },
+  {
+    id: "festivals",
+    emoji: "🎪",
+    title: "Festival & Event Volunteering",
+    tagline: "Work a few shifts, get in free, camp for nothing.",
+    blurb:
+      "Festivals run on volunteers. Give them a handful of stewarding or bar shifts and you get a free ticket (often £200+ saved), free camping, and the rest of the weekend to enjoy the music. Many programs take a refundable deposit instead of payment, so it costs you essentially nothing. It's the cheapest way into events you'd otherwise never splurge on — and a brilliant way to meet people.",
+    platforms: [
+      {
+        name: "Oxfam Festivals",
+        url: "https://www.oxfam.org.uk/oxfam-in-action/oxfam-festivals/",
+        cost: "Refundable deposit",
+        summary:
+          "Steward at Glastonbury and the UK's biggest festivals — your shifts fund a good cause.",
+        details:
+          "Oxfam is the volunteer steward at many marquee UK festivals including Glastonbury. You work three shifts across the event in exchange for a free ticket, a dedicated volunteer campsite with hot showers, and meal vouchers. You pay a deposit that's refunded after your shifts. Famously well organized and friendly.",
+      },
+      {
+        name: "Festaff",
+        url: "https://www.festaff.co.uk",
+        cost: "Refundable deposit",
+        summary:
+          "Volunteer staffing across dozens of UK festivals — flexible, easy, well-run.",
+        details:
+          "Sign up, pick your festivals, work a set number of hours (litter-picking, wristband checks, campsite stewarding) and get free entry plus camping. A deposit holds your place and comes back once you've done your shifts. A great option beyond just the Oxfam-staffed events.",
+      },
+      {
+        name: "Festival Volunteer",
+        url: "https://www.festivalvolunteer.co.uk",
+        cost: "Refundable deposit",
+        summary:
+          "Another solid UK network listing volunteer roles across the festival calendar.",
+        details:
+          "Lists steward and crew roles at a wide range of music and arts festivals. Same model: a few shifts buys you the ticket, camping, and the weekend. Worth registering with two or three of these networks to maximize your pick of events.",
+      },
+    ],
+  },
+  {
+    id: "slow-travel",
+    emoji: "🚲",
+    title: "Slow Travel & Rideshare",
+    tagline: "Move between places for almost nothing — and meet people doing it.",
+    blurb:
+      "Getting around is often the biggest cost of a trip. These networks and routes turn the journey itself into the cheap, social, memorable part: share a stranger's car, get hosted as a touring cyclist, walk an ancient pilgrim path sleeping in €10 hostels, or stick out a thumb. Slower than flying, far richer — and your wallet barely notices.",
+    platforms: [
+      {
+        name: "Warmshowers",
+        url: "https://www.warmshowers.org",
+        cost: "Small one-time fee",
+        summary:
+          "Couch surfing built specifically for touring cyclists — free stays with fellow riders.",
+        details:
+          "A global hospitality network where bike tourers host other bike tourers: a bed, a shower, a meal, and usually invaluable local route advice. The shared experience of long-distance cycling makes for an unusually warm, trusting community. Essential if you're touring on two wheels.",
+      },
+      {
+        name: "BlaBlaCar",
+        url: "https://www.blablacar.com",
+        cost: "Cost of the ride share",
+        summary:
+          "Long-distance carpooling — split fuel costs with a driver already making your trip.",
+        details:
+          "Hugely popular across Europe and beyond. Drivers list spare seats on trips they're already taking; you pay a small share of the costs, far less than a train or bus. Profiles, ratings, and reviews keep it safe, and the conversations are half the fun. The 'Bla Bla' rating even lets you choose chatty or quiet co-riders.",
+      },
+      {
+        name: "Camino de Santiago",
+        url: "https://www.santiago-compostela.net",
+        cost: "~€5–15/night hostels",
+        summary:
+          "Walk an ancient pilgrim route across Spain, sleeping in cheap pilgrim hostels (albergues).",
+        details:
+          "Not a platform but a path — actually several. With a pilgrim passport (credencial) you sleep in albergues for a few euros a night (some donation-only), eat cheap pilgrim menus, and walk through northern Spain for weeks on a tiny budget. A whole sub-culture of slow, cheap, contemplative travel — and you're never short of company on the trail.",
+      },
+      {
+        name: "Hitchwiki",
+        url: "https://hitchwiki.org",
+        cost: "Free",
+        summary:
+          "The collaborative guide to hitchhiking the world — the truly free way to travel.",
+        details:
+          "A community-built wiki with country-by-country advice, the best spots to catch rides, legality, and safety tips. Hitchhiking isn't for everyone and demands good judgment, but in many parts of the world it's safe, common, and the most adventurous, sociable, zero-cost way to cover ground.",
+      },
+    ],
+  },
+  {
+    id: "teach-english",
+    emoji: "🌍",
+    title: "Teach English Abroad",
+    tagline: "A real salary plus housing — the path that funds the travel.",
+    blurb:
+      "Most options here help you spend less; teaching English helps you earn while living abroad. With a TEFL/TESOL certificate (a few weeks online) you can get a paid teaching job in dozens of countries — often with free or subsidized housing, flights, and contract bonuses on top. It's the most stable, longest-horizon way to actually live somewhere new for a year or more and come home with savings instead of debt.",
+    platforms: [
+      {
+        name: "Dave's ESL Cafe",
+        url: "https://www.eslcafe.com",
+        cost: "Free job board",
+        summary:
+          "The grizzled, much-loved original job board and forum for teaching English abroad.",
+        details:
+          "Around forever and still indispensable. Big job boards for Korea, China, and the wider international market, plus forums where you can research schools, salaries, and scams before signing anything. Start here to learn the lay of the land.",
+      },
+      {
+        name: "Teach Away",
+        url: "https://www.teachaway.com",
+        cost: "Free for teachers",
+        summary:
+          "A polished agency matching teachers with vetted schools and government programs worldwide.",
+        details:
+          "Curated postings (including well-paid government and Middle East roles), application support, and an in-house TEFL certification if you need one. A more guided, modern alternative to the wild-west job boards, good if you'd like a hand navigating contracts and visas.",
+      },
+      {
+        name: "JET Programme",
+        url: "https://jetprogramme.org",
+        cost: "Free (you're paid well)",
+        summary:
+          "Japan's prestigious government program placing assistant English teachers nationwide.",
+        details:
+          "Run by the Japanese government, JET is one of the best-regarded teaching gigs in the world: a strong salary, flights, support, and placement anywhere from big cities to rural towns. Competitive and a real commitment (usually a year, often renewed), but a genuinely life-changing way to live in Japan.",
+      },
+      {
+        name: "TEFL.org",
+        url: "https://www.tefl.org",
+        cost: "Course fees",
+        summary:
+          "Get the certificate that unlocks the whole field — accredited TEFL/TESOL training.",
+        details:
+          "Before most of the jobs above, you'll want a recognized TEFL certificate (120 hours is the common standard). This is one of the well-regarded accredited providers, with online courses and a jobs centre. Think of it as the key that opens every other door in this category.",
+      },
+    ],
+  },
+  {
+    id: "conservation",
+    emoji: "🦜",
+    title: "Conservation & Wildlife Volunteering",
+    tagline: "Trade your hands for a bunk on the front line of the wild.",
+    blurb:
+      "Conservation projects worldwide take volunteers to monitor sea turtles, restore habitats, track wildlife, and run field stations. Some are free work exchanges; many charge a fee that covers food, lodging, and the project's costs (so read the fine print and choose reputable, locally-rooted ones). Either way, you live somewhere remote and beautiful, learn real ecological skills, and your sweat goes toward something that matters.",
+    platforms: [
+      {
+        name: "Earthwatch",
+        url: "https://earthwatch.org",
+        cost: "Expedition fees",
+        summary:
+          "Join real scientists on field research expeditions — citizen science with teeth.",
+        details:
+          "A respected nonprofit pairing volunteers with working scientists on biodiversity and climate research around the world. You pay to take part (it funds the science), but you're doing genuine data collection alongside researchers, not token tasks. The gold-standard option if you want substance.",
+      },
+      {
+        name: "Sea Turtle Conservancy",
+        url: "https://conserveturtles.org",
+        cost: "Program fees",
+        summary:
+          "Patrol nesting beaches and protect sea turtles in Costa Rica and Florida.",
+        details:
+          "The world's oldest sea turtle research and conservation group. Volunteer programs put you on the beach at night tagging nesting turtles and protecting hatchlings. Iconic, hands-on, and deeply moving work in stunning coastal settings.",
+      },
+      {
+        name: "GVI",
+        url: "https://www.gvi.co.uk",
+        cost: "Program fees",
+        summary:
+          "Structured conservation and community programs with strong support and safety.",
+        details:
+          "Runs organized projects — marine conservation, wildlife monitoring, reforestation — with training, accommodation, and on-site staff included. Pricier 'voluntourism,' but well-suited to first-timers or anyone who wants logistics, safety, and a ready-made group handled for them.",
+      },
+      {
+        name: "The Conservation Volunteers",
+        url: "https://www.tcv.org.uk",
+        cost: "Free / low cost",
+        summary:
+          "Hands-on environmental volunteering across the UK — much of it free to join.",
+        details:
+          "For UK-based, low-cost conservation: practical 'Green Gym' work parties, habitat restoration, tree planting, and longer residential 'conservation holidays' for a modest fee. A great, affordable way to get experience close to home before committing to an overseas project.",
+      },
+    ],
+  },
+  {
+    id: "intentional-communities",
+    emoji: "🛖",
+    title: "Eco-Villages & Intentional Communities",
+    tagline: "Live communally, share the work, rethink how life can be arranged.",
+    blurb:
+      "Across the world, groups of people have chosen to live together with shared values — ecological, social, spiritual, or simply cooperative. Many welcome visitors, volunteers, and longer-term residents through work exchanges or low rent. It's a chance to step entirely outside the rent-and-commute treadmill, learn permaculture and communal living, and experience a genuinely different model of everyday life.",
+    platforms: [
+      {
+        name: "Foundation for Intentional Community",
+        url: "https://www.ic.org",
+        cost: "Free directory",
+        summary:
+          "The master directory of intentional communities, eco-villages, and co-ops worldwide.",
+        details:
+          "The single best starting point: a searchable database of thousands of communities — eco-villages, cohousing, communes, spiritual communities — with details on whether they accept visitors, volunteers, or new members. Filter by location, values, and how to get involved.",
+      },
+      {
+        name: "Global Ecovillage Network",
+        url: "https://ecovillage.org",
+        cost: "Free directory + programs",
+        summary:
+          "A worldwide network of ecovillages, with maps, education, and volunteer pathways.",
+        details:
+          "Connects hundreds of intentional sustainable communities across every continent. Beyond the directory, GEN runs training (like the Ecovillage Design Education course) and points you toward places that take working visitors. Ideal if sustainability and regenerative living are your draw.",
+      },
+      {
+        name: "NuMundo",
+        url: "https://numundo.org",
+        cost: "Varies by center",
+        summary:
+          "A platform for 'impact centers' — eco-farms, retreat centers, and regenerative communities.",
+        details:
+          "A modern, traveler-friendly way to find permaculture farms, healing centers, and conscious communities offering stays, work exchanges, and immersions. Strong in Latin America. Think Airbnb-meets-purpose, surfacing places where you can live, learn, and contribute.",
+      },
+      {
+        name: "Diggers & Dreamers",
+        url: "https://www.diggersanddreamers.org.uk",
+        cost: "Free directory",
+        summary:
+          "The long-running guide to communal living in Britain.",
+        details:
+          "A frank, well-loved resource on UK communes, cohousing, and intentional communities — including honest essays on what communal life is actually like, plus listings of communities looking for members and visitors. Refreshingly unromantic and practical.",
+      },
+    ],
+  },
+  {
+    id: "caretaking",
+    emoji: "🚐",
+    title: "Caretaking & Workamping",
+    tagline: "Mind a property or campground and live there rent-free.",
+    blurb:
+      "A cousin of house sitting, but longer-term and often more rugged: looking after estates, remote lodges, ranches, or campgrounds in exchange for free accommodation (and sometimes a wage). 'Workamping' is the RV version — host a campground for a season and park your rig for free. These are the deals that let people live for years on almost nothing, often in wild and gorgeous corners most travelers never reach.",
+    platforms: [
+      {
+        name: "The Caretaker Gazette",
+        url: "https://www.caretaker.org",
+        cost: "~$30/yr subscription",
+        summary:
+          "The cult-classic newsletter of property caretaking gigs around the world.",
+        details:
+          "For decades, the place to find people who'll give you free lodging (and often pay) to look after their property — remote cabins, islands, estates, ranches, lighthouses. A modest subscription gets you the listings. Niche, charming, and full of genuinely unusual ways to live somewhere extraordinary for free.",
+      },
+      {
+        name: "Workamper News",
+        url: "https://www.workamper.com",
+        cost: "Membership fee",
+        summary:
+          "The hub of the North American 'workamping' world — work-for-campsite and RV jobs.",
+        details:
+          "If you've got an RV (or want one), workamping lets you live on the road nearly free: hosts at campgrounds, national parks, and resorts trade a free site (and often pay) for part-time work. Workamper News is the original and biggest job board for it, with listings, advice, and a whole community.",
+      },
+      {
+        name: "Recreation.gov — Camp Host & Volunteer",
+        url: "https://www.recreation.gov",
+        cost: "Free (volunteer roles)",
+        summary:
+          "Volunteer as a campground host on US public lands — free site in spectacular places.",
+        details:
+          "US federal and state parks need volunteer campground hosts every season, usually in exchange for a free campsite and utilities in some of the most beautiful land in the country. Search public-lands volunteering here and at volunteer.gov. Low cash, high scenery — a classic way to spend a summer.",
       },
     ],
   },
