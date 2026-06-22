@@ -309,17 +309,13 @@ main {
 }
 
 .cost {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   align-self: flex-start;
-  background: color-mix(in srgb, var(--cat, var(--accent)) 16%, #fff);
   color: color-mix(in srgb, var(--cat, var(--accent)) 80%, #000);
   font-size: 0.74rem;
   font-weight: 600;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  white-space: nowrap;
-  max-width: 45%;
-  text-align: center;
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .summary {
