@@ -15,6 +15,7 @@ function renderChips() {
     const chip = el("button", "chip" + (i === 0 ? " active" : ""));
     chip.textContent = `${cat.emoji} ${cat.title}`;
     chip.dataset.target = cat.id;
+    chip.style.setProperty("--cat", PALETTE[i % PALETTE.length]);
     chip.addEventListener("click", () => {
       document.getElementById(cat.id).scrollIntoView({ behavior: "smooth" });
     });
@@ -71,10 +72,28 @@ function renderCard(p) {
   return card;
 }
 
+// A distinct, harmonious color for each category — keeps sections visually separated and fun.
+const PALETTE = [
+  "#5a8f4e", // work exchange — green
+  "#c2632f", // house sitting — terracotta
+  "#d4574e", // hospitality — coral
+  "#7a6cae", // contemplative — indigo
+  "#cc6699", // au pair — rose
+  "#3d7ea6", // sailing — sea blue
+  "#4f7cac", // seasonal — slate blue
+  "#b8519e", // festivals — magenta
+  "#d99022", // slow travel — amber
+  "#5566c4", // teach english — blue-violet
+  "#4f9d5d", // conservation — leaf green
+  "#a06a3f", // intentional communities — earth
+  "#7d8a3f", // caretaking — olive
+];
+
 function renderSections() {
-  CATEGORIES.forEach((cat) => {
+  CATEGORIES.forEach((cat, i) => {
     const section = el("section", "section");
     section.id = cat.id;
+    section.style.setProperty("--cat", PALETTE[i % PALETTE.length]);
 
     const head = el("div", "section-head");
     head.appendChild(el("span", "section-emoji", cat.emoji));
