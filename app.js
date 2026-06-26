@@ -127,6 +127,75 @@ function setupScrollSpy() {
   document.querySelectorAll(".section").forEach((s) => observer.observe(s));
 }
 
+// Floating particle drift over the hero — subtle depth and motion.
+function initHeroParticles() {
+  const canvas = document.getElementById("heroCanvas");
+  if (!canvas) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const ctx = canvas.getContext("2d");
+  const hero = canvas.parentElement;
+  let w = 0;
+  let h = 0;
+  const COUNT = 64;
+  let particles = [];
+
+  function resize() {
+    w = canvas.width = hero.offsetWidth;
+    h = canvas.height = hero.offsetHeight;
+  }
+  function seed() {
+    particles = Array.from({ length: COUNT }, () => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      r: Math.random() * 2.2 + 0.6,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      a: Math.random() * 0.5 + 0.15,
+    }));
+  }
+  function tick() {
+    ctx.clearRect(0, 0, w, h);
+    for (const p of particles) {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0) p.x = w;
+      else if (p.x > w) p.x = 0;
+      if (p.y < 0) p.y = h;
+      else if (p.y > h) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${p.a})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  resize();
+  seed();
+  tick();
+  window.addEventListener("resize", resize);
+}
+
+// Reveal sections as they scroll into view (no-JS users see everything by default).
+function initReveal() {
+  document.documentElement.classList.add("reveal-ready");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px" }
+  );
+  document.querySelectorAll(".section").forEach((s) => observer.observe(s));
+}
+
 renderChips();
 renderSections();
 setupScrollSpy();
+initHeroParticles();
+initReveal();
