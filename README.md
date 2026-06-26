@@ -1,14 +1,15 @@
-# Deep Travel
+# Alternative Lives
 
-A small, free web resource illuminating the many ways to **travel and live cheaply** — the options that exist outside the traditional corporate world.
+A free, comprehensive **menu of alternative lives and lifestyles** — the cheap, unconventional, often little-known ways people actually live instead of the standard script. Almost none require much money; the real entry fee is sincere interest. It's a lay of the land and a starting point for researching deeper.
 
-It covers five paths:
+It covers 13 categories:
 
 - 🌱 **Work Exchange & Volunteering** — Workaway, WWOOF, HelpX, Worldpackers
 - 🏡 **House & Pet Sitting** — TrustedHousesitters, MindMyHouse, Nomador, and more
-- 🛋️ **Hospitality & Couch Surfing** — Couchsurfing, BeWelcome, Servas, and your own network
+- 🛋️ **Hospitality & Couch Surfing** — Couchsurfing, BeWelcome, Servas
 - 🕯️ **Contemplative Communities** — San Francisco Zen Center, Plum Village, monasteries & ashrams
 - 🧺 **Au Pair & Family Stays** — AuPairWorld, Cultural Care, and agency programs
+- ⛵ **Sailing & Boat Crew** · 🏔️ **Seasonal & Adventure Jobs** · 🎪 **Festival & Event Volunteering** · 🚲 **Slow Travel & Rideshare** · 🌍 **Teach English Abroad** · 🦜 **Conservation & Wildlife Volunteering** · 🛖 **Eco-Villages & Intentional Communities** · 🚐 **Caretaking & Workamping**
 
 ## Running it
 
