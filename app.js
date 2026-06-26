@@ -1,4 +1,4 @@
-// Creative Lives — render categories and cards from data.js.
+// Alternative Lives — render categories and cards from data.js.
 
 const chipsEl = document.getElementById("chips") || document.querySelector(".chips");
 const contentEl = document.getElementById("content");
